@@ -1,0 +1,715 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6A09B16221007075006C818D /* MZAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B16121007075006C818D /* MZAPI.swift */; };
+		6A09B167210078E5006C818D /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B166210078E5006C818D /* String+Extension.swift */; };
+		6A09B17021017F21006C818D /* MBProgressHUD+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B16F21017F21006C818D /* MBProgressHUD+Extension.swift */; };
+		6A09B1732101B549006C818D /* MZSetupPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B1712101B549006C818D /* MZSetupPasswordVC.swift */; };
+		6A09B1742101B549006C818D /* MZSetupPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A09B1722101B549006C818D /* MZSetupPasswordVC.xib */; };
+		6A09B1782101B984006C818D /* MZMainPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B1762101B984006C818D /* MZMainPageVC.swift */; };
+		6A09B1792101B984006C818D /* MZMainPageVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A09B1772101B984006C818D /* MZMainPageVC.xib */; };
+		6A09B17B2101BA6F006C818D /* MZNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B17A2101BA6F006C818D /* MZNavigationController.swift */; };
+		6A09B17D2101C0CC006C818D /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B17C2101C0CC006C818D /* UIImage+Extension.swift */; };
+		6A09B18421022236006C818D /* MZLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A09B18221022236006C818D /* MZLoginVC.swift */; };
+		6A09B18521022236006C818D /* MZLoginVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A09B18321022236006C818D /* MZLoginVC.xib */; };
+		6A12BF9820FB422F009573C6 /* MZRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A12BF9620FB422F009573C6 /* MZRegisterVC.swift */; };
+		6A12BF9920FB422F009573C6 /* MZRegisterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A12BF9720FB422F009573C6 /* MZRegisterVC.xib */; };
+		6A24C2EA2223CB490074D880 /* MZMainPageTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24C2E82223CB490074D880 /* MZMainPageTextCell.swift */; };
+		6A24C2EB2223CB490074D880 /* MZMainPageTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A24C2E92223CB490074D880 /* MZMainPageTextCell.xib */; };
+		6A24C2EF2223DED00074D880 /* MZMainPageImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24C2ED2223DED00074D880 /* MZMainPageImageCell.swift */; };
+		6A24C2F02223DED00074D880 /* MZMainPageImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A24C2EE2223DED00074D880 /* MZMainPageImageCell.xib */; };
+		6A24C2F32223E7E30074D880 /* MZMainPageMutiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A24C2F12223E7E30074D880 /* MZMainPageMutiCell.swift */; };
+		6A24C2F42223E7E30074D880 /* MZMainPageMutiCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A24C2F22223E7E30074D880 /* MZMainPageMutiCell.xib */; };
+		6A2A74FA20D8F79300173DE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2A74F920D8F79300173DE3 /* AppDelegate.swift */; };
+		6A2A750120D8F79300173DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A2A750020D8F79300173DE3 /* Assets.xcassets */; };
+		6A2A751120D8FA3C00173DE3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2A751020D8FA3C00173DE3 /* libz.tbd */; };
+		6A2A751320D8FA4D00173DE3 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A2A751220D8FA4D00173DE3 /* libstdc++.tbd */; };
+		6A2A751E20D9DC9600173DE3 /* MZFatherController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2A751C20D9DC9600173DE3 /* MZFatherController.swift */; };
+		6A2A752120D9DDD200173DE3 /* MZLeadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2A752020D9DDD200173DE3 /* MZLeadingVC.swift */; };
+		6A2A752420D9DF1000173DE3 /* MZBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A2A752320D9DF1000173DE3 /* MZBase.swift */; };
+		6A5BF3CF2277F18700EF1503 /* MZCommentDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A5BF3CD2277F18700EF1503 /* MZCommentDetailCell.swift */; };
+		6A5BF3D02277F18700EF1503 /* MZCommentDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A5BF3CE2277F18700EF1503 /* MZCommentDetailCell.xib */; };
+		6A881B83212A90C2004E8506 /* MZDiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A881B82212A90C2004E8506 /* MZDiaryModel.swift */; };
+		6A9B45382228FC6300ED16B1 /* MZUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B45372228FC6300ED16B1 /* MZUser.swift */; };
+		6A9B453B222920A400ED16B1 /* MZMyInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B4539222920A400ED16B1 /* MZMyInfoVC.swift */; };
+		6A9B453C222920A400ED16B1 /* MZMyInfoVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9B453A222920A400ED16B1 /* MZMyInfoVC.xib */; };
+		6A9B453F2229230F00ED16B1 /* MZMyInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B453D2229230F00ED16B1 /* MZMyInfoCell.swift */; };
+		6A9B45402229230F00ED16B1 /* MZMyInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9B453E2229230F00ED16B1 /* MZMyInfoCell.xib */; };
+		6A9B4543222A50CF00ED16B1 /* MZEidtUsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B4541222A50CF00ED16B1 /* MZEidtUsernameVC.swift */; };
+		6A9B4544222A50CF00ED16B1 /* MZEidtUsernameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9B4542222A50CF00ED16B1 /* MZEidtUsernameVC.xib */; };
+		6A9B4547222A582A00ED16B1 /* MZModifyPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B4545222A582A00ED16B1 /* MZModifyPasswordVC.swift */; };
+		6A9B4548222A582A00ED16B1 /* MZModifyPasswordVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9B4546222A582A00ED16B1 /* MZModifyPasswordVC.xib */; };
+		6A9B454B222A6D8E00ED16B1 /* MZHistoryDiaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B4549222A6D8E00ED16B1 /* MZHistoryDiaryVC.swift */; };
+		6A9B454C222A6D8E00ED16B1 /* MZHistoryDiaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9B454A222A6D8E00ED16B1 /* MZHistoryDiaryVC.xib */; };
+		6A9B454F2230B03100ED16B1 /* MZDiaryDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B454D2230B03100ED16B1 /* MZDiaryDetailVC.swift */; };
+		6A9B45502230B03100ED16B1 /* MZDiaryDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9B454E2230B03100ED16B1 /* MZDiaryDetailVC.xib */; };
+		6A9B45532230B81400ED16B1 /* MZDiaryDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B45512230B81400ED16B1 /* MZDiaryDetailCell.swift */; };
+		6A9B45542230B81400ED16B1 /* MZDiaryDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9B45522230B81400ED16B1 /* MZDiaryDetailCell.xib */; };
+		6A9B45562230C35200ED16B1 /* MZCommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B45552230C35200ED16B1 /* MZCommentModel.swift */; };
+		6A9B455F22360F7400ED16B1 /* UILabel+LCLabelCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B455B22360F7400ED16B1 /* UILabel+LCLabelCategory.m */; };
+		6A9B456022360F7400ED16B1 /* LCTextHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B455C22360F7400ED16B1 /* LCTextHelper.m */; };
+		6ADF9BBB21549C7900ABFE71 /* MZAddDiaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADF9BB921549C7900ABFE71 /* MZAddDiaryVC.swift */; };
+		6ADF9BBC21549C7900ABFE71 /* MZAddDiaryVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6ADF9BBA21549C7900ABFE71 /* MZAddDiaryVC.xib */; };
+		6AEF4DD72227D9A20084539E /* MZDataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF4DD62227D9A20084539E /* MZDataUtil.swift */; };
+		6AEF4DDB2228C3360084539E /* MZPersonCenterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF4DD92228C3360084539E /* MZPersonCenterVC.swift */; };
+		6AEF4DDC2228C3360084539E /* MZPersonCenterVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF4DDA2228C3360084539E /* MZPersonCenterVC.xib */; };
+		6AEF4DE12228CB610084539E /* MZPersonCenterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF4DDF2228CB610084539E /* MZPersonCenterCell.swift */; };
+		6AEF4DE22228CB610084539E /* MZPersonCenterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AEF4DE02228CB610084539E /* MZPersonCenterCell.xib */; };
+		6AEF4DE42228D16D0084539E /* MZTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AEF4DE32228D16D0084539E /* MZTabbarController.swift */; };
+		6AFCD8242277CFBA00A652F1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFCD8232277CFBA00A652F1 /* UIView+Extension.swift */; };
+		6AFCD8272277D22900A652F1 /* MZCommentDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFCD8252277D22900A652F1 /* MZCommentDetailVC.swift */; };
+		6AFCD8282277D22900A652F1 /* MZCommentDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6AFCD8262277D22900A652F1 /* MZCommentDetailVC.xib */; };
+		E632CA7FABF7BF17C3BBE905 /* Pods_diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E3257A60A968D40549B0C71 /* Pods_diary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5BE2C15D2C614500BA31D2CE /* Pods-diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diary.release.xcconfig"; path = "Pods/Target Support Files/Pods-diary/Pods-diary.release.xcconfig"; sourceTree = "<group>"; };
+		6A09B16121007075006C818D /* MZAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZAPI.swift; sourceTree = "<group>"; };
+		6A09B166210078E5006C818D /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		6A09B16F21017F21006C818D /* MBProgressHUD+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MBProgressHUD+Extension.swift"; sourceTree = "<group>"; };
+		6A09B1712101B549006C818D /* MZSetupPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZSetupPasswordVC.swift; sourceTree = "<group>"; };
+		6A09B1722101B549006C818D /* MZSetupPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZSetupPasswordVC.xib; sourceTree = "<group>"; };
+		6A09B1762101B984006C818D /* MZMainPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMainPageVC.swift; sourceTree = "<group>"; };
+		6A09B1772101B984006C818D /* MZMainPageVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZMainPageVC.xib; sourceTree = "<group>"; };
+		6A09B17A2101BA6F006C818D /* MZNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZNavigationController.swift; sourceTree = "<group>"; };
+		6A09B17C2101C0CC006C818D /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		6A09B18221022236006C818D /* MZLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZLoginVC.swift; sourceTree = "<group>"; };
+		6A09B18321022236006C818D /* MZLoginVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZLoginVC.xib; sourceTree = "<group>"; };
+		6A12BF9620FB422F009573C6 /* MZRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZRegisterVC.swift; sourceTree = "<group>"; };
+		6A12BF9720FB422F009573C6 /* MZRegisterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZRegisterVC.xib; sourceTree = "<group>"; };
+		6A24C2E82223CB490074D880 /* MZMainPageTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMainPageTextCell.swift; sourceTree = "<group>"; };
+		6A24C2E92223CB490074D880 /* MZMainPageTextCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZMainPageTextCell.xib; sourceTree = "<group>"; };
+		6A24C2ED2223DED00074D880 /* MZMainPageImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMainPageImageCell.swift; sourceTree = "<group>"; };
+		6A24C2EE2223DED00074D880 /* MZMainPageImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZMainPageImageCell.xib; sourceTree = "<group>"; };
+		6A24C2F12223E7E30074D880 /* MZMainPageMutiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMainPageMutiCell.swift; sourceTree = "<group>"; };
+		6A24C2F22223E7E30074D880 /* MZMainPageMutiCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZMainPageMutiCell.xib; sourceTree = "<group>"; };
+		6A2A74F620D8F79300173DE3 /* diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A2A74F920D8F79300173DE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A2A750020D8F79300173DE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A2A750520D8F79300173DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A2A751020D8FA3C00173DE3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		6A2A751220D8FA4D00173DE3 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		6A2A751420D8FAB000173DE3 /* diary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "diary-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A2A751C20D9DC9600173DE3 /* MZFatherController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZFatherController.swift; sourceTree = "<group>"; };
+		6A2A752020D9DDD200173DE3 /* MZLeadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZLeadingVC.swift; sourceTree = "<group>"; };
+		6A2A752320D9DF1000173DE3 /* MZBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZBase.swift; sourceTree = "<group>"; };
+		6A5BF3CD2277F18700EF1503 /* MZCommentDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZCommentDetailCell.swift; sourceTree = "<group>"; };
+		6A5BF3CE2277F18700EF1503 /* MZCommentDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZCommentDetailCell.xib; sourceTree = "<group>"; };
+		6A881B82212A90C2004E8506 /* MZDiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZDiaryModel.swift; sourceTree = "<group>"; };
+		6A9B45372228FC6300ED16B1 /* MZUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZUser.swift; sourceTree = "<group>"; };
+		6A9B4539222920A400ED16B1 /* MZMyInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMyInfoVC.swift; sourceTree = "<group>"; };
+		6A9B453A222920A400ED16B1 /* MZMyInfoVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZMyInfoVC.xib; sourceTree = "<group>"; };
+		6A9B453D2229230F00ED16B1 /* MZMyInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZMyInfoCell.swift; sourceTree = "<group>"; };
+		6A9B453E2229230F00ED16B1 /* MZMyInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZMyInfoCell.xib; sourceTree = "<group>"; };
+		6A9B4541222A50CF00ED16B1 /* MZEidtUsernameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZEidtUsernameVC.swift; sourceTree = "<group>"; };
+		6A9B4542222A50CF00ED16B1 /* MZEidtUsernameVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZEidtUsernameVC.xib; sourceTree = "<group>"; };
+		6A9B4545222A582A00ED16B1 /* MZModifyPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZModifyPasswordVC.swift; sourceTree = "<group>"; };
+		6A9B4546222A582A00ED16B1 /* MZModifyPasswordVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZModifyPasswordVC.xib; sourceTree = "<group>"; };
+		6A9B4549222A6D8E00ED16B1 /* MZHistoryDiaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZHistoryDiaryVC.swift; sourceTree = "<group>"; };
+		6A9B454A222A6D8E00ED16B1 /* MZHistoryDiaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZHistoryDiaryVC.xib; sourceTree = "<group>"; };
+		6A9B454D2230B03100ED16B1 /* MZDiaryDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZDiaryDetailVC.swift; sourceTree = "<group>"; };
+		6A9B454E2230B03100ED16B1 /* MZDiaryDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZDiaryDetailVC.xib; sourceTree = "<group>"; };
+		6A9B45512230B81400ED16B1 /* MZDiaryDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZDiaryDetailCell.swift; sourceTree = "<group>"; };
+		6A9B45522230B81400ED16B1 /* MZDiaryDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZDiaryDetailCell.xib; sourceTree = "<group>"; };
+		6A9B45552230C35200ED16B1 /* MZCommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZCommentModel.swift; sourceTree = "<group>"; };
+		6A9B455B22360F7400ED16B1 /* UILabel+LCLabelCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LCLabelCategory.m"; sourceTree = "<group>"; };
+		6A9B455C22360F7400ED16B1 /* LCTextHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCTextHelper.m; sourceTree = "<group>"; };
+		6A9B455D22360F7400ED16B1 /* UILabel+LCLabelCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LCLabelCategory.h"; sourceTree = "<group>"; };
+		6A9B455E22360F7400ED16B1 /* LCTextHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCTextHelper.h; sourceTree = "<group>"; };
+		6ADF9BB921549C7900ABFE71 /* MZAddDiaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZAddDiaryVC.swift; sourceTree = "<group>"; };
+		6ADF9BBA21549C7900ABFE71 /* MZAddDiaryVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZAddDiaryVC.xib; sourceTree = "<group>"; };
+		6AEF4DD62227D9A20084539E /* MZDataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZDataUtil.swift; sourceTree = "<group>"; };
+		6AEF4DD92228C3360084539E /* MZPersonCenterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZPersonCenterVC.swift; sourceTree = "<group>"; };
+		6AEF4DDA2228C3360084539E /* MZPersonCenterVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZPersonCenterVC.xib; sourceTree = "<group>"; };
+		6AEF4DDF2228CB610084539E /* MZPersonCenterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZPersonCenterCell.swift; sourceTree = "<group>"; };
+		6AEF4DE02228CB610084539E /* MZPersonCenterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZPersonCenterCell.xib; sourceTree = "<group>"; };
+		6AEF4DE32228D16D0084539E /* MZTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZTabbarController.swift; sourceTree = "<group>"; };
+		6AFCD8232277CFBA00A652F1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		6AFCD8252277D22900A652F1 /* MZCommentDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MZCommentDetailVC.swift; sourceTree = "<group>"; };
+		6AFCD8262277D22900A652F1 /* MZCommentDetailVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MZCommentDetailVC.xib; sourceTree = "<group>"; };
+		6E3257A60A968D40549B0C71 /* Pods_diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA4A0D41C6FD291C0E0BEBDB /* Pods-diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-diary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-diary/Pods-diary.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A2A74F320D8F79300173DE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A2A751320D8FA4D00173DE3 /* libstdc++.tbd in Frameworks */,
+				6A2A751120D8FA3C00173DE3 /* libz.tbd in Frameworks */,
+				E632CA7FABF7BF17C3BBE905 /* Pods_diary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		106BEF9E3A5668298B59934A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA4A0D41C6FD291C0E0BEBDB /* Pods-diary.debug.xcconfig */,
+				5BE2C15D2C614500BA31D2CE /* Pods-diary.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A09B16021007059006C818D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				6A09B16121007075006C818D /* MZAPI.swift */,
+				6A09B166210078E5006C818D /* String+Extension.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		6A09B16C21017ED8006C818D /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6A09B16F21017F21006C818D /* MBProgressHUD+Extension.swift */,
+				6A09B17C2101C0CC006C818D /* UIImage+Extension.swift */,
+				6AFCD8232277CFBA00A652F1 /* UIView+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		6A09B1752101B96B006C818D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				6A24C2E72223CAEA0074D880 /* View */,
+				6A881B7B21281D05004E8506 /* Model */,
+				6A09B1762101B984006C818D /* MZMainPageVC.swift */,
+				6A09B1772101B984006C818D /* MZMainPageVC.xib */,
+				6ADF9BB921549C7900ABFE71 /* MZAddDiaryVC.swift */,
+				6ADF9BBA21549C7900ABFE71 /* MZAddDiaryVC.xib */,
+				6A9B454D2230B03100ED16B1 /* MZDiaryDetailVC.swift */,
+				6A9B454E2230B03100ED16B1 /* MZDiaryDetailVC.xib */,
+				6AFCD8252277D22900A652F1 /* MZCommentDetailVC.swift */,
+				6AFCD8262277D22900A652F1 /* MZCommentDetailVC.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6A24C2E72223CAEA0074D880 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A24C2E82223CB490074D880 /* MZMainPageTextCell.swift */,
+				6A24C2E92223CB490074D880 /* MZMainPageTextCell.xib */,
+				6A24C2ED2223DED00074D880 /* MZMainPageImageCell.swift */,
+				6A24C2EE2223DED00074D880 /* MZMainPageImageCell.xib */,
+				6A24C2F12223E7E30074D880 /* MZMainPageMutiCell.swift */,
+				6A24C2F22223E7E30074D880 /* MZMainPageMutiCell.xib */,
+				6A9B45512230B81400ED16B1 /* MZDiaryDetailCell.swift */,
+				6A9B45522230B81400ED16B1 /* MZDiaryDetailCell.xib */,
+				6A5BF3CD2277F18700EF1503 /* MZCommentDetailCell.swift */,
+				6A5BF3CE2277F18700EF1503 /* MZCommentDetailCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6A2A74ED20D8F79300173DE3 = {
+			isa = PBXGroup;
+			children = (
+				6A2A74F820D8F79300173DE3 /* diary */,
+				6A2A74F720D8F79300173DE3 /* Products */,
+				106BEF9E3A5668298B59934A /* Pods */,
+				6D673CF86A5970868360B8EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A2A74F720D8F79300173DE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A2A74F620D8F79300173DE3 /* diary.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A2A74F820D8F79300173DE3 /* diary */ = {
+			isa = PBXGroup;
+			children = (
+				6A9B455922360F6100ED16B1 /* Thirdparty */,
+				6AEF4DD82228C2E00084539E /* Person */,
+				6A09B1752101B96B006C818D /* Main */,
+				6A09B16C21017ED8006C818D /* Extension */,
+				6A09B16021007059006C818D /* API */,
+				6A2A751B20D9DC5400173DE3 /* Base */,
+				6A2A750B20D8F7E600173DE3 /* Login */,
+				6A2A74F920D8F79300173DE3 /* AppDelegate.swift */,
+				6A2A750020D8F79300173DE3 /* Assets.xcassets */,
+				6A2A750520D8F79300173DE3 /* Info.plist */,
+				6A2A751420D8FAB000173DE3 /* diary-Bridging-Header.h */,
+			);
+			path = diary;
+			sourceTree = "<group>";
+		};
+		6A2A750B20D8F7E600173DE3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				6A2A752020D9DDD200173DE3 /* MZLeadingVC.swift */,
+				6A09B18221022236006C818D /* MZLoginVC.swift */,
+				6A09B18321022236006C818D /* MZLoginVC.xib */,
+				6A12BF9620FB422F009573C6 /* MZRegisterVC.swift */,
+				6A12BF9720FB422F009573C6 /* MZRegisterVC.xib */,
+				6A09B1712101B549006C818D /* MZSetupPasswordVC.swift */,
+				6A09B1722101B549006C818D /* MZSetupPasswordVC.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		6A2A751B20D9DC5400173DE3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				6A2A751C20D9DC9600173DE3 /* MZFatherController.swift */,
+				6A2A752320D9DF1000173DE3 /* MZBase.swift */,
+				6A09B17A2101BA6F006C818D /* MZNavigationController.swift */,
+				6AEF4DD62227D9A20084539E /* MZDataUtil.swift */,
+				6AEF4DE32228D16D0084539E /* MZTabbarController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		6A881B7B21281D05004E8506 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A881B82212A90C2004E8506 /* MZDiaryModel.swift */,
+				6A9B45552230C35200ED16B1 /* MZCommentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6A9B455922360F6100ED16B1 /* Thirdparty */ = {
+			isa = PBXGroup;
+			children = (
+				6A9B455A22360F7400ED16B1 /* LCText */,
+			);
+			path = Thirdparty;
+			sourceTree = "<group>";
+		};
+		6A9B455A22360F7400ED16B1 /* LCText */ = {
+			isa = PBXGroup;
+			children = (
+				6A9B455D22360F7400ED16B1 /* UILabel+LCLabelCategory.h */,
+				6A9B455B22360F7400ED16B1 /* UILabel+LCLabelCategory.m */,
+				6A9B455E22360F7400ED16B1 /* LCTextHelper.h */,
+				6A9B455C22360F7400ED16B1 /* LCTextHelper.m */,
+			);
+			path = LCText;
+			sourceTree = "<group>";
+		};
+		6AEF4DD82228C2E00084539E /* Person */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF4DDE2228CB430084539E /* Model */,
+				6AEF4DDD2228CB3A0084539E /* View */,
+				6AEF4DD92228C3360084539E /* MZPersonCenterVC.swift */,
+				6AEF4DDA2228C3360084539E /* MZPersonCenterVC.xib */,
+				6A9B4539222920A400ED16B1 /* MZMyInfoVC.swift */,
+				6A9B453A222920A400ED16B1 /* MZMyInfoVC.xib */,
+				6A9B4541222A50CF00ED16B1 /* MZEidtUsernameVC.swift */,
+				6A9B4542222A50CF00ED16B1 /* MZEidtUsernameVC.xib */,
+				6A9B4545222A582A00ED16B1 /* MZModifyPasswordVC.swift */,
+				6A9B4546222A582A00ED16B1 /* MZModifyPasswordVC.xib */,
+				6A9B4549222A6D8E00ED16B1 /* MZHistoryDiaryVC.swift */,
+				6A9B454A222A6D8E00ED16B1 /* MZHistoryDiaryVC.xib */,
+			);
+			path = Person;
+			sourceTree = "<group>";
+		};
+		6AEF4DDD2228CB3A0084539E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6AEF4DDF2228CB610084539E /* MZPersonCenterCell.swift */,
+				6AEF4DE02228CB610084539E /* MZPersonCenterCell.xib */,
+				6A9B453D2229230F00ED16B1 /* MZMyInfoCell.swift */,
+				6A9B453E2229230F00ED16B1 /* MZMyInfoCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6AEF4DDE2228CB430084539E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A9B45372228FC6300ED16B1 /* MZUser.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6D673CF86A5970868360B8EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A2A751220D8FA4D00173DE3 /* libstdc++.tbd */,
+				6A2A751020D8FA3C00173DE3 /* libz.tbd */,
+				6E3257A60A968D40549B0C71 /* Pods_diary.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A2A74F520D8F79300173DE3 /* diary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A2A750820D8F79300173DE3 /* Build configuration list for PBXNativeTarget "diary" */;
+			buildPhases = (
+				583337D17F4E3C3F2B9C3D74 /* [CP] Check Pods Manifest.lock */,
+				6A2A74F220D8F79300173DE3 /* Sources */,
+				6A2A74F320D8F79300173DE3 /* Frameworks */,
+				6A2A74F420D8F79300173DE3 /* Resources */,
+				19E9A546AD819094B0A0EA94 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = diary;
+			productName = diary;
+			productReference = 6A2A74F620D8F79300173DE3 /* diary.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A2A74EE20D8F79300173DE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = mz;
+				TargetAttributes = {
+					6A2A74F520D8F79300173DE3 = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = 6A2A74F120D8F79300173DE3 /* Build configuration list for PBXProject "diary" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A2A74ED20D8F79300173DE3;
+			productRefGroup = 6A2A74F720D8F79300173DE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A2A74F520D8F79300173DE3 /* diary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A2A74F420D8F79300173DE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A9B454C222A6D8E00ED16B1 /* MZHistoryDiaryVC.xib in Resources */,
+				6A2A750120D8F79300173DE3 /* Assets.xcassets in Resources */,
+				6AEF4DDC2228C3360084539E /* MZPersonCenterVC.xib in Resources */,
+				6ADF9BBC21549C7900ABFE71 /* MZAddDiaryVC.xib in Resources */,
+				6A24C2EB2223CB490074D880 /* MZMainPageTextCell.xib in Resources */,
+				6A9B45502230B03100ED16B1 /* MZDiaryDetailVC.xib in Resources */,
+				6A12BF9920FB422F009573C6 /* MZRegisterVC.xib in Resources */,
+				6A9B453C222920A400ED16B1 /* MZMyInfoVC.xib in Resources */,
+				6A24C2F42223E7E30074D880 /* MZMainPageMutiCell.xib in Resources */,
+				6AFCD8282277D22900A652F1 /* MZCommentDetailVC.xib in Resources */,
+				6A9B45542230B81400ED16B1 /* MZDiaryDetailCell.xib in Resources */,
+				6A24C2F02223DED00074D880 /* MZMainPageImageCell.xib in Resources */,
+				6A09B1742101B549006C818D /* MZSetupPasswordVC.xib in Resources */,
+				6A9B4544222A50CF00ED16B1 /* MZEidtUsernameVC.xib in Resources */,
+				6A09B18521022236006C818D /* MZLoginVC.xib in Resources */,
+				6A9B45402229230F00ED16B1 /* MZMyInfoCell.xib in Resources */,
+				6A09B1792101B984006C818D /* MZMainPageVC.xib in Resources */,
+				6A5BF3D02277F18700EF1503 /* MZCommentDetailCell.xib in Resources */,
+				6AEF4DE22228CB610084539E /* MZPersonCenterCell.xib in Resources */,
+				6A9B4548222A582A00ED16B1 /* MZModifyPasswordVC.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19E9A546AD819094B0A0EA94 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-diary/Pods-diary-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/MZExtension/MZExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-diary/Pods-diary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		583337D17F4E3C3F2B9C3D74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A2A74F220D8F79300173DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A5BF3CF2277F18700EF1503 /* MZCommentDetailCell.swift in Sources */,
+				6A9B454B222A6D8E00ED16B1 /* MZHistoryDiaryVC.swift in Sources */,
+				6AEF4DE42228D16D0084539E /* MZTabbarController.swift in Sources */,
+				6ADF9BBB21549C7900ABFE71 /* MZAddDiaryVC.swift in Sources */,
+				6A9B4547222A582A00ED16B1 /* MZModifyPasswordVC.swift in Sources */,
+				6AEF4DD72227D9A20084539E /* MZDataUtil.swift in Sources */,
+				6A9B45532230B81400ED16B1 /* MZDiaryDetailCell.swift in Sources */,
+				6A881B83212A90C2004E8506 /* MZDiaryModel.swift in Sources */,
+				6A09B17D2101C0CC006C818D /* UIImage+Extension.swift in Sources */,
+				6AFCD8242277CFBA00A652F1 /* UIView+Extension.swift in Sources */,
+				6A9B45562230C35200ED16B1 /* MZCommentModel.swift in Sources */,
+				6A24C2EF2223DED00074D880 /* MZMainPageImageCell.swift in Sources */,
+				6A12BF9820FB422F009573C6 /* MZRegisterVC.swift in Sources */,
+				6A2A752120D9DDD200173DE3 /* MZLeadingVC.swift in Sources */,
+				6A9B453F2229230F00ED16B1 /* MZMyInfoCell.swift in Sources */,
+				6A24C2EA2223CB490074D880 /* MZMainPageTextCell.swift in Sources */,
+				6A09B1732101B549006C818D /* MZSetupPasswordVC.swift in Sources */,
+				6AEF4DDB2228C3360084539E /* MZPersonCenterVC.swift in Sources */,
+				6A09B17021017F21006C818D /* MBProgressHUD+Extension.swift in Sources */,
+				6A24C2F32223E7E30074D880 /* MZMainPageMutiCell.swift in Sources */,
+				6A9B453B222920A400ED16B1 /* MZMyInfoVC.swift in Sources */,
+				6A9B45382228FC6300ED16B1 /* MZUser.swift in Sources */,
+				6A9B454F2230B03100ED16B1 /* MZDiaryDetailVC.swift in Sources */,
+				6A09B1782101B984006C818D /* MZMainPageVC.swift in Sources */,
+				6AFCD8272277D22900A652F1 /* MZCommentDetailVC.swift in Sources */,
+				6A09B18421022236006C818D /* MZLoginVC.swift in Sources */,
+				6A9B455F22360F7400ED16B1 /* UILabel+LCLabelCategory.m in Sources */,
+				6A2A752420D9DF1000173DE3 /* MZBase.swift in Sources */,
+				6AEF4DE12228CB610084539E /* MZPersonCenterCell.swift in Sources */,
+				6A9B456022360F7400ED16B1 /* LCTextHelper.m in Sources */,
+				6A09B167210078E5006C818D /* String+Extension.swift in Sources */,
+				6A2A751E20D9DC9600173DE3 /* MZFatherController.swift in Sources */,
+				6A2A74FA20D8F79300173DE3 /* AppDelegate.swift in Sources */,
+				6A9B4543222A50CF00ED16B1 /* MZEidtUsernameVC.swift in Sources */,
+				6A09B17B2101BA6F006C818D /* MZNavigationController.swift in Sources */,
+				6A09B16221007075006C818D /* MZAPI.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6A2A750620D8F79300173DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6A2A750720D8F79300173DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A2A750920D8F79300173DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA4A0D41C6FD291C0E0BEBDB /* Pods-diary.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9B3R8UT3R5;
+				INFOPLIST_FILE = diary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mz.swiftDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = swiftDiary_dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/diary/diary-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6A2A750A20D8F79300173DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5BE2C15D2C614500BA31D2CE /* Pods-diary.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9B3R8UT3R5;
+				INFOPLIST_FILE = diary/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mz.swiftDiary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = swiftDiary_dev;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/diary/diary-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A2A74F120D8F79300173DE3 /* Build configuration list for PBXProject "diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A2A750620D8F79300173DE3 /* Debug */,
+				6A2A750720D8F79300173DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A2A750820D8F79300173DE3 /* Build configuration list for PBXNativeTarget "diary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A2A750920D8F79300173DE3 /* Debug */,
+				6A2A750A20D8F79300173DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6A2A74EE20D8F79300173DE3 /* Project object */;
+}
