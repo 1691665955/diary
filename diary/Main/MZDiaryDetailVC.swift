@@ -10,6 +10,7 @@ import UIKit
 import MJRefresh
 import MBProgressHUD
 import IQKeyboardManager
+import MZExtension
 
 class MZDiaryDetailVC: MZFatherController,UITableViewDataSource,UITableViewDelegate,UITextViewDelegate {
     @IBOutlet weak var distributeBtn: UIButton!
@@ -21,6 +22,10 @@ class MZDiaryDetailVC: MZFatherController,UITableViewDataSource,UITableViewDeleg
     lazy var commentList:NSMutableArray = {
         let commentList = NSMutableArray();
         return commentList;
+    }()
+    lazy var imageViewList:NSMutableArray = {
+        let imageViewList = NSMutableArray();
+        return imageViewList;
     }()
     var pageNum:NSInteger!
     var model: MZDiaryModel!
@@ -140,6 +145,13 @@ class MZDiaryDetailVC: MZFatherController,UITableViewDataSource,UITableViewDeleg
                 imageView.sd_setImage(with: URL.init(string: self.model.images![i] as! String)) { (image, error, cacheType, imageUrl) in
                     
                 }
+                
+                imageView.isUserInteractionEnabled = true;
+                imageView.tag = 10+i;
+                let imageTap = UITapGestureRecognizer.init(target: self, action: #selector(imagePreview));
+                imageView.addGestureRecognizer(imageTap);
+                self.imageViewList.add(imageView);
+                
                 header.addSubview(imageView);
                 maxY = imageView.frame.maxY;
             }
@@ -160,6 +172,13 @@ class MZDiaryDetailVC: MZFatherController,UITableViewDataSource,UITableViewDeleg
                 imageView.sd_setImage(with: URL.init(string: self.model.images![i] as! String)) { (image, error, cacheType, imageUrl) in
                     
                 }
+                
+                imageView.isUserInteractionEnabled = true;
+                imageView.tag = 10+i;
+                let imageTap = UITapGestureRecognizer.init(target: self, action: #selector(imagePreview));
+                imageView.addGestureRecognizer(imageTap);
+                self.imageViewList.add(imageView);
+                
                 header.addSubview(imageView);
                 maxY = imageView.frame.maxY;
             }
@@ -192,6 +211,11 @@ class MZDiaryDetailVC: MZFatherController,UITableViewDataSource,UITableViewDeleg
     
     @objc func follow() -> Void {
         
+    }
+    
+    @objc func imagePreview(tap:UITapGestureRecognizer) -> Void {
+        let imageBrowsingVC = MZImageBrowsingVC.init(imageViewArray: self.imageViewList as? [UIImageView], currentIndex: tap.view!.tag-10);
+        self.present(imageBrowsingVC!, animated: true, completion: nil);
     }
     
     @objc func loadNew() -> Void {
@@ -268,7 +292,7 @@ class MZDiaryDetailVC: MZFatherController,UITableViewDataSource,UITableViewDeleg
         let cell = self.tableView(self.tableView, cellForRowAt: indexPath) as! MZDiaryDetailCell;
         return cell.Height;
     }
-
+    
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         if scrollView == self.tableView {
             self.commentView.text = "";

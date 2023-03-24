@@ -15,8 +15,8 @@ class MZTabbarController: UITabBarController {
         self.setupChildViewControllers();
         
         let tabbarItem = UITabBarItem.appearance();
-        tabbarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:RGB(r: 108, g: 108, b: 108)], for: UIControlState.normal);
-        tabbarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:RGB(r: 0, g: 212, b: 71)], for: UIControlState.selected);
+        tabbarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:MZThemeManage.TabbarNormalColor()], for: UIControlState.normal);
+        tabbarItem.setTitleTextAttributes([NSAttributedStringKey.foregroundColor:MZThemeManage.MainColor()], for: UIControlState.selected);
     }
 
     func setupController(vc:UIViewController,title:String,image:UIImage,selectedImage:UIImage) -> Void {
@@ -28,8 +28,10 @@ class MZTabbarController: UITabBarController {
     
     func setupChildViewControllers() -> Void {
         let mainPageVC = MZMainPageVC.init(nibName: "MZMainPageVC", bundle: nil);
-        self.setupController(vc: mainPageVC, title: "日记", image: UIImage.init(named: "diary_normal")!, selectedImage: UIImage.init(named: "diary_selected")!);
+        self.setupController(vc: mainPageVC, title: "日记", image: MZThemeManage.imageNamed(name: "diary_normal"), selectedImage: MZThemeManage.imageNamed(name: "diary_selected"));
+        let squareCenterVC = MZSquareCenterVC.init(nibName: "MZSquareCenterVC", bundle: nil);
+        self.setupController(vc: squareCenterVC, title: "广场", image: MZThemeManage.imageNamed(name: "square_normal"), selectedImage: MZThemeManage.imageNamed(name: "square_selected"));
         let personCenterVC = MZPersonCenterVC.init(nibName: "MZPersonCenterVC", bundle: nil);
-        self.setupController(vc: personCenterVC, title: "我的", image: UIImage.init(named: "person_normal")!, selectedImage: UIImage.init(named: "person_selected")!);
+        self.setupController(vc: personCenterVC, title: "我的", image: MZThemeManage.imageNamed(name: "person_normal"), selectedImage: MZThemeManage.imageNamed(name: "person_selected"));
     }
 }

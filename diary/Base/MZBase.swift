@@ -19,6 +19,7 @@ let StateBar_Height = CGFloat(UIScreen.main.bounds.height >= 812.0 ? 44.0: 20.0)
 let Tabbar_Height = CGFloat(UIScreen.main.bounds.height >= 812.0 ? 83.0: 49.0)
 let Safe_Bottom = CGFloat(UIScreen.main.bounds.height >= 812.0 ? 34.0: 0)
 
+
 func RGBA(r:CGFloat,g:CGFloat,b:CGFloat,a:CGFloat) -> UIColor {
     return UIColor.init(red: r/255.0, green: g/255.0, blue: b/255.0, alpha: a)
 }

@@ -13,7 +13,7 @@ import IQKeyboardManager
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let nvc = MZNavigationController.init(rootViewController: leadingVC);
             self.window?.rootViewController = nvc;
         }
-    
+        
         return true
     }
 

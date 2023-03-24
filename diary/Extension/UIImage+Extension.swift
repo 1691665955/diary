@@ -48,7 +48,7 @@ extension UIImage {
     
     static func drawLinearGradient(content:CGContext,path:CGPath,startColor:CGColor,endColor:CGColor,startPoint:CGPoint,endPoint:CGPoint) -> Void {
         let colorSpace = CGColorSpaceCreateDeviceRGB();
-        let locations:[CGFloat] = [1.0,1.0];
+        let locations:[CGFloat] = [0.0,1.0];
         let colors = [startColor,endColor];
         let gradient = CGGradient.init(colorsSpace: colorSpace, colors: colors as CFArray, locations: locations);
         let pathRect = path.boundingBox;

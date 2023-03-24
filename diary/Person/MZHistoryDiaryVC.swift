@@ -9,6 +9,7 @@
 import UIKit
 import MBProgressHUD
 import MJRefresh
+import MZExtension
 
 enum MZDiaryListType {
     case history
@@ -123,12 +124,20 @@ class MZHistoryDiaryVC: MZFatherController, UITableViewDataSource, UITableViewDe
             cell.showUserDetail = { userID in
                 
             }
+            cell.previewImage = { (imageViewList, currentIndex) in
+                let imageBrowsingVC = MZImageBrowsingVC.init(imageViewArray: imageViewList, currentIndex: currentIndex);
+                self.present(imageBrowsingVC!, animated: true, completion: nil);
+            }
             return cell;
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MZMainPageMutiCell") as! MZMainPageMutiCell;
             cell.model = model;
             cell.showUserDetail = { userID in
                 
+            }
+            cell.previewImage = { (imageViewList, currentIndex) in
+                let imageBrowsingVC = MZImageBrowsingVC.init(imageViewArray: imageViewList, currentIndex: currentIndex);
+                self.present(imageBrowsingVC!, animated: true, completion: nil);
             }
             return cell;
         }

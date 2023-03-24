@@ -14,6 +14,8 @@
 #import "MZActionSheetDelegate.h"
 #import "MZAlertController.h"
 #import "MZPresentationController.h"
+#import "MZImageBrowsingVC.h"
+#import "MZPresentAnimationTransitioning.h"
 
 FOUNDATION_EXPORT double MZExtensionVersionNumber;
 FOUNDATION_EXPORT const unsigned char MZExtensionVersionString[];

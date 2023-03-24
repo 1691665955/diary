@@ -10,7 +10,7 @@ import Foundation
 
 extension String {
     static func apiWithShortUrl(url:String!) -> String! {
-        return "http://192.168.50.126" + url;
+        return "http://www.jeasonzeng.com" + url;
     }
     
     func isPhoneNum() -> Bool {

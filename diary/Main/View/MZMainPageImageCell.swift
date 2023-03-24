@@ -22,6 +22,11 @@ class MZMainPageImageCell: UITableViewCell {
     
     var starBlock: (()->Void)!
     var showUserDetail:((_ userID:String?) -> Void)!
+    var previewImage:((_ imageViewList:[UIImageView], _ currentIndex:NSInteger) -> Void)!
+    lazy var imageViewList:NSMutableArray = {
+        let imageViewList = NSMutableArray();
+        return imageViewList;
+    }()
     
     var model: MZDiaryModel! {
         didSet {
@@ -40,6 +45,7 @@ class MZMainPageImageCell: UITableViewCell {
             }
             
             self.Height = 108 + (SCREEN_WIDTH-14*5)/4;
+            self.imageViewList.removeAllObjects();
             for i in 0..<4 {
                 let imageView = self.viewWithTag(10+i) as! UIImageView;
                 if (i < model.images!.count) {
@@ -47,6 +53,7 @@ class MZMainPageImageCell: UITableViewCell {
                     imageView.sd_setImage(with: URL.init(string: model.images![i] as! String)) { (image, error, cacheType, imageUrl) in
                         
                     }
+                    self.imageViewList.add(imageView);
                 } else {
                     imageView.isHidden = true;
                 }
@@ -66,11 +73,23 @@ class MZMainPageImageCell: UITableViewCell {
         self.iconView.addGestureRecognizer(iconTap);
         let nameTap = UITapGestureRecognizer.init(target: self, action: #selector(tapClicked));
         self.nicknameLB.addGestureRecognizer(nameTap);
+        
+        for i in 0..<4 {
+            let imageView = self.viewWithTag(10+i) as! UIImageView;
+            let imageTap = UITapGestureRecognizer.init(target: self, action: #selector(imagePreview));
+            imageView.addGestureRecognizer(imageTap);
+        }
     }
 
     @objc func tapClicked() -> Void {
         if self.showUserDetail != nil {
             self.showUserDetail(self.model.userID);
+        }
+    }
+    
+    @objc func imagePreview(tap:UITapGestureRecognizer) -> Void {
+        if self.previewImage != nil {
+            self.previewImage(self.imageViewList as! [UIImageView], tap.view!.tag-10);
         }
     }
     

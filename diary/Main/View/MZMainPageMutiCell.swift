@@ -23,6 +23,11 @@ class MZMainPageMutiCell: UITableViewCell {
     
     var starBlock: (()->Void)!
     var showUserDetail:((_ userID:String?) -> Void)!
+    var previewImage:((_ imageViewList:[UIImageView], _ currentIndex:NSInteger) -> Void)!
+    lazy var imageViewList:NSMutableArray = {
+        let imageViewList = NSMutableArray();
+        return imageViewList;
+    }()
     
     var model: MZDiaryModel! {
         didSet {
@@ -51,6 +56,7 @@ class MZMainPageMutiCell: UITableViewCell {
                 self.contentHeight.constant = 20;
             }
             
+            self.imageViewList.removeAllObjects();
             for i in 0..<4 {
                 let imageView = self.viewWithTag(10+i) as! UIImageView;
                 if (i < model.images!.count) {
@@ -58,6 +64,7 @@ class MZMainPageMutiCell: UITableViewCell {
                     imageView.sd_setImage(with: URL.init(string: model.images![i] as! String)) { (image, error, cacheType, imageUrl) in
                         
                     }
+                    self.imageViewList.add(imageView);
                 } else {
                     imageView.isHidden = true;
                 }
@@ -77,6 +84,12 @@ class MZMainPageMutiCell: UITableViewCell {
         self.iconView.addGestureRecognizer(iconTap);
         let nameTap = UITapGestureRecognizer.init(target: self, action: #selector(tapClicked));
         self.nicknameLB.addGestureRecognizer(nameTap);
+        
+        for i in 0..<4 {
+            let imageView = self.viewWithTag(10+i) as! UIImageView;
+            let imageTap = UITapGestureRecognizer.init(target: self, action: #selector(imagePreview));
+            imageView.addGestureRecognizer(imageTap);
+        }
     }
 
     @objc func tapClicked() -> Void {
@@ -84,6 +97,12 @@ class MZMainPageMutiCell: UITableViewCell {
             self.showUserDetail(self.model.userID);
         }
     }
+    
+    @objc func imagePreview(tap:UITapGestureRecognizer) -> Void {
+           if self.previewImage != nil {
+               self.previewImage(self.imageViewList as! [UIImageView], tap.view!.tag-10);
+           }
+       }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
